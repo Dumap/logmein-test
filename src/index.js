@@ -44,7 +44,7 @@ let reducer = function(state, action) {
             return { ...state, showDeck: true };
         }
       case "restart":
-        return { ...state, deck: fullDeck, dealtCards : [] };
+        return { ...state, deck: fullDeck, dealtCards : [], showDeck: false };
       default:
         return state;
     }

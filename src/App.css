@@ -191,7 +191,7 @@ body{
     padding-top: 5px;
   }
   .deck-compact img.card { 
-    margin-left: -52px;
+    margin-left: -60px;
     padding-top: 5px;
   }
   .deck-compact.active-hand img.card:hover { 

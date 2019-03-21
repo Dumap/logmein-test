@@ -19,6 +19,7 @@ class App extends Component {
 
   restart = () =>{
     this.props.dispatch({ type: "restart"})
+    this.setState({showCardBtn: 'Show Deck'});
     this.shuffleCards();
   }
 
