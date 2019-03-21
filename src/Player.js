@@ -4,12 +4,12 @@ import { connect } from "react-redux";
 class Player extends Component {
 
     renderCards = (card, index) => {
-        return (<img className='card' src={card} alt={index} />)
+        return (<img className='card' key={"player-"+index} src={card} alt={index} />)
     }
 
     render(){
         return(
-        <div class="deck-compact active-hand" >
+        <div className="deck-compact active-hand" >
              {this.props.dealtCards.map(this.renderCards)}
         </div>)
     }

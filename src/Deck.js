@@ -6,9 +6,9 @@ class Deck extends Component {
 
     renderCards = (card, index) => {
         if(this.props.showDeck){
-            return (<img className='card' id={"deck-"+index} src={card} alt={index} />)
+            return (<img className='card' key={"deck-"+index} src={card} alt={index} />)
         }else{
-            return (<img className='card' id={"deck-"+index} src={back} alt={index} />)
+            return (<img className='card' key={"deck-"+index} src={back} alt={index} />)
         }
     }
 
