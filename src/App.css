@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css?family=Bangers');
+
+body{
+  height: 100%; 
+	margin: 0;
+  padding: 0;
+  text-align: center;
+  background-image: url("./background.jpg");
+}
+
+nav{
+  font-family: 'Bangers',cursive;
+  font-size: 100px;
+  padding-left: 30px;
+  color: #FF9900;
+  background-color: #000099;
+  text-align: center;
+}
+
+button{
+  padding: 10px 25px;
+  margin: 10px 10px 10px 10px;
+  font-family: 'Bangers',cursive;
+  font-size: 22px;
+  background-color:#FF9900;
+  border-radius: 25px;
+  font-weight: bold;
+}
+
+.controls{
+  width: 100%;
+  background-color: #000099;
+  position: fixed;
+  bottom: 0;
+  display:flex; 
+  flex-direction:row;
+  justify-content: center;
+  align-content: space-between;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.table{
+  display:flex; 
+  flex-direction:row;
+}
+
+img.card {
+	width: 100px;
+	margin: 0;
+	padding: 0;
+  border: 0;
+	vertical-align: initial;
+  box-sizing: initial;
+  -webkit-filter: drop-shadow(12px 12px 7px rgba(0,0,0,0.5));      
+  filter: drop-shadow(12px 12px 7px rgba(0,0,0,0.5));  
+}
+
+.deck-compact { 
+  display: inline-block; 
+  width: 80%;
+  padding: 5%;
+}
+.deck-compact img.card:first-child { 
+	margin-left: 0px;
+	padding-top: 5px;
+}
+.deck-compact img.card { 
+	margin-left: -52px;
+	padding-top: 5px;
+}
+.deck-compact.active-hand img.card:hover { 
+	padding-top: 0px;
+	padding-bottom: 10px;
+}
+
+.deck-back { 
+  display: inline-block; 
+  width: 80%;
+  padding: 5%;
+}
+.deck-back img.card:first-child { 
+	margin-left: 0px;
+	padding-top: 5px;
+}
+.deck-back img.card { 
+	margin-left: -95px;
+	padding-top: 10px;
+}
+.deck-back.active-hand img.card:hover { 
+	padding-top: 0px;
+	padding-bottom: 10px;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
